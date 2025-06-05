@@ -1,0 +1,308 @@
+.modak-regular {
+    font-family: "Modak", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.bungee-shade-regular {
+    font-family: "Bungee Shade", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+.spicy-rice-regular {
+    font-family: "Spicy Rice", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.allerta-regular {
+  font-family: "Allerta", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+  
+@font-face {
+    font-family: 'BubblySodaRegular';
+    src: url('fonts/BubblySodaRegular.woff2') format('woff2'),
+         url('fonts/BubblySodaRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  h1 {
+    font-family: 'BubblySodaRegular', sans-serif;
+    color: rgb(74, 227, 232);
+    text-align: center;
+    letter-spacing: 0.05em; 
+    font-size: 55px;
+  }
+
+h2 {
+    font-family: 'Spicy Rice', serif;
+    color: #731DD8;
+    text-align: center;
+    letter-spacing: 0.05em; 
+    font-size: 20px;
+  }
+
+h3 {
+    font-family: 'Allerta', sans-serif;
+    color: #731DD8;
+    letter-spacing: 0.05em; 
+    font-size: 15px;
+  }
+
+  
+  body {
+    background-color: #f0f0f0; 
+    font-family: 'BubblySodaRegular', sans-serif; 
+    margin: 0; 
+    padding: 20px; 
+  }
+  
+  nav {
+    background-color: #731DD8; 
+    padding: 10px; 
+    text-align: left; 
+  }
+
+ nav a {
+    color: white; 
+    text-decoration: none;
+    transition: color 0.3s ease; 
+    transition: text-shadow 0.3s ease;
+    padding: 10px;
+  }
+  
+  nav a:hover {
+    color: #731DD8;
+    text-shadow: 0 0 4px #ffffff, 0 0 12px #ffffff;
+  }
+
+
+
+     
+  .hover-geograophie {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .hover-geographie:hover {
+    transform: scale(1.1); /* makes image bigger */
+    box-shadow: 0 0px 20px #d295fc; /* adds shadow */
+    border-radius: 5px; /* optional: for rounded corners */
+
+  }
+
+
+
+.btn {
+    background-color: rgb(74, 227, 232);
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: rgb(50, 213, 239);
+}
+
+
+  
+
+.wrapper {
+  width: 100%;
+  padding: 0 2rem;
+  text-align: center;
+}
+.polaroid {
+  background: #fff;
+  padding: 1rem;
+  box-shadow: 0 0.2rem 1.2rem rgba(0,0,0,0.2);
+  
+}
+.polaroid > img{
+  max-width: 100%;
+  height: auto;
+}
+.caption {
+  font-size: 1.8rem;
+  text-align: center;
+  line-height: 2em;
+  font-family: 'Spicy Rice';
+}
+.item {
+  width: 30%;
+  display: inline-block;
+  margin-top: 2rem;
+  filter: grayscale(100%);
+}
+.item .polaroid:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  transition: all 0.35s;
+}
+.item:nth-of-type(4n+1) {
+  transform: scale(0.8, 0.8) rotate(5deg);
+  transition: all 0.35s;
+}
+.item:nth-of-type(4n+1) .polaroid:before {
+  transform: rotate(6deg);
+  height: 20%;
+  width: 47%;
+  bottom: 30px;
+  right: 12px;
+  box-shadow: 0 2.1rem 2rem rgba(0,0,0,0.4);
+}
+.item:nth-of-type(4n+2) {
+  transform: scale(0.8, 0.8) rotate(-5deg);
+  transition: all 0.35s;
+}
+.item:nth-of-type(4n+2) .polaroid:before {
+  transform: rotate(-6deg);
+  height: 20%;
+  width: 47%;
+  bottom: 30px;
+  left: 12px;
+  box-shadow: 0 2.1rem 2rem rgba(0,0,0,0.4);
+}
+.item:nth-of-type(4n+4) {
+  transform: scale(0.8, 0.8) rotate(3deg);
+  transition: all 0.35s;
+}
+.item:nth-of-type(4n+4) .polaroid:before {
+  transform: rotate(4deg);
+  height: 20%;
+  width: 47%;
+  bottom: 30px;
+  right: 12px;
+  box-shadow: 0 2.1rem 2rem rgba(0,0,0,0.3);
+}
+.item:nth-of-type(4n+3) {
+  transform: scale(0.8, 0.8) rotate(-3deg);
+  transition: all 0.35s;
+}
+.item:nth-of-type(4n+3) .polaroid:before {
+  transform: rotate(-4deg);
+  height: 20%;
+  width: 47%;
+  bottom: 30px;
+  left: 12px;
+  box-shadow: 0 2.1rem 2rem rgba(0,0,0,0.3);
+}
+.item:hover {
+  filter: none;
+  transform: scale(1, 1) rotate(0deg) !important;
+  transition: all 0.35s;
+  color: rgb(74, 227, 232)
+}
+.item:hover .polaroid:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  transform: rotate(0deg);
+  height: 90%;
+  width: 90%;
+  bottom: 0%;
+  right: 5%;
+  box-shadow: 0 1rem 3rem rgba(0,0,0,0.2);
+  transition: all 0.35s;
+}
+
+
+
+
+
+
+
+quizz
+
+
+#quiz {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #66ebf0;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(198, 222, 60, 0.2);
+}
+
+#question {
+  margin-bottom: 20px;
+}
+
+#options {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  background-color: rgb(196, 248, 237);
+  color: #131313;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'BubblySodaRegular';
+}
+
+button:hover {
+  background-color: #8f8d8d;
+}
+
+.rihide {
+  display: none;
+}
+
+.riactivity img
+{
+  cursor:pointer;
+  width:100%
+}
+
+.ricorrect {
+  font-family: 'Spicy Rice';
+  position: relative;
+  padding: .75rem 1.25rem;
+  margin: 1rem;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+  width: 100%
+}
+
+.riincorrect {
+  font-family: 'Spicy Rice';
+  position: relative;
+  padding: .75rem 1.25rem;
+  margin: 1rem;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+  width: 100%
+}
+
+.riitem {
+  font-family: 'Spicy Rice';
+  position: relative;
+  padding: .75rem 1.25rem;
+  margin: 1rem;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  color: #111;
+  background-color: rgb(209, 249, 250);
+  border-color: rgb(74, 227, 232);
+ 
+}
