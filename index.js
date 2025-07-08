@@ -38,6 +38,46 @@ var questions = [{
   "response": "Elisa (qui d'autre, en même temps ?)",
   "answerimage": 'riimage001'
 }, {
+  "question": "Laisse moi vivre mon mâle alpha dream ",
+  "response": "Margot (on sait tous que je suis un mâle alpha)",
+  "answerimage": 'riimage002'
+},  {
+  "question": "Est-ce que je ressors le même discours à chaque fois ? Oui. Aujourd'hui, j'ai vu Chloé ~ (avec une voix toute pipou) ",
+  "response": "Elise. Forcément Elise. ",
+  "answerimage": 'riimage003'
+}, {
+  "question": "Au pire, tape dans un mur et après t'es plus en colère. Petit tips ",
+  "response": "Elisa quand Elise est énervée d'être aussi gay",
+  "answerimage": 'riimage001'
+}, {
+  "question": "The Marcel in you can do it ",
+  "response": "Elise avec Marcel le goat",
+  "answerimage": 'riimage003'
+}, {
+  "question": "Il pleut toute la journée bichette ",
+  "response": "Margot quand Elisa se rend compte qu'on va faire la course solidaire 2024 sous la flotte",
+  "answerimage": 'riimage002'
+}, {
+  "question": "FUIIIIIS! Fuis l'humanité ",
+  "response": "Margot près qu'Elise ait croisé des gens et on n'aime pas les gens",
+  "answerimage": 'riimage002'
+}, {
+  "question": "Parce que j'aime bien critiquer l'état",
+  "response": "Elisa quand on lui demande pourquoi elle veut faire le SNU alors qu'elle critique tout",
+  "answerimage": 'riimage001'
+}, {
+  "question": "J’en veut bien pour mes péchés svp ",
+  "response": "Elise quand Margot dit que les témoins de Jéhovah de saverne offrent des cours bibliques",
+  "answerimage": 'riimage003'
+},  {
+  "question": "Mdr le gars, il croyait vraiment que les gens seraient content de le voir vivant ",
+  "response": "Margot quand Elisa parle d'un livre avec un connard qui est revenu d'entre les morts jsp sorry c'est pas clair j'ai pas réécouté tout le vocal, il faisait 1min c'est trop long",
+  "answerimage": 'riimage002'
+},  {
+  "question": "Jojo sous tour de kayou ",
+  "response": "Elisa quand Margot lui montre Joel de TLOU faire une tour de kayou après avoir vécu les pires traumas",
+  "answerimage": 'riimage001'
+},{
   "question": "C'était la dernière question <3 ",
   "response": "Elise",
   "answerimage": 'riimage003'
