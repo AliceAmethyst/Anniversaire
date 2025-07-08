@@ -37,6 +37,7 @@
     text-align: center;
     letter-spacing: 0.05em; 
     font-size: 55px;
+    z-index: 10;
   }
 
 h2 {
@@ -295,7 +296,7 @@ button:hover {
 }
 
 .riitem {
-  font-family: 'Spicy Rice';
+  font-family: 'Allerta', sans-serif;
   position: relative;
   padding: .75rem 1.25rem;
   margin: 1rem;
@@ -305,4 +306,48 @@ button:hover {
   background-color: rgb(209, 249, 250);
   border-color: rgb(74, 227, 232);
  
+}
+
+
+
+
+
+#stars-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 2000px; /* Ensure it covers long pages */
+  z-index: 0; /* Behind content, but above background */
+  pointer-events: none; /* Let clicks pass through by default */
+}
+
+.star {
+  position: absolute;
+  width: 20px;
+  height: auto; /* Prevent stretching */
+  pointer-events: auto; /* Enable click/hover */
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  z-index: 1;
+}
+
+.star:hover {
+  transform: scale(1.4);
+
+  filter: brightness(1.2) saturate(1.4);
+
+}
+
+.tooltip {
+  position: absolute;
+  background-color: #fff;
+  color: #000;
+  padding: 5px 8px;
+  border-radius: 6px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+  font-size: 12px;
+  white-space: nowrap;
+  display: none;
+  z-index: 100;
 }
